@@ -13,6 +13,7 @@ BEGIN
     } 
     ELSE
     {
+        i:=i+1
         nb-words:= nb-words + 1;
     }
     END_IF
