@@ -7,7 +7,7 @@ nbr-v:INTEGER =0;
 
 BEGIN
     read(st);
-    FOR i FROM 0 TO st.length STEP i++  DO
+    FOR i FROM 0 TO st.length STEP 1 DO
     IF(st[i]<>" " and st[i]<> ".") THEN{
       nbr-c:= nbr-c + 1;
     } 
