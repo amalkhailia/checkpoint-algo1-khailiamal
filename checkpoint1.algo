@@ -1,0 +1,26 @@
+ALGORITHM sentences
+VAR
+st:STRING
+nb-words:INTEGER =0;
+nbr-c:INTEGER =0;
+nbr-v:INTEGER =0;
+
+BEGIN
+    read(st);
+    FOR i FROM 0 TO st.length STEP i++  DO
+    IF(st[i]<>" ") THEN{
+      nbr-c:= nbr-c + 1;
+    } 
+    ELSE
+    {
+        nb-words:= nb-words + 1;
+    }
+    END_IF
+    IF (st[i] in ["a","e","o","i","u","y"]) THEN
+        {
+            nbr-v :=  nbr-v + 1;
+        }
+    END_IF
+
+    END_FOR
+END
